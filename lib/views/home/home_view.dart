@@ -43,8 +43,10 @@ class HomeView extends StatelessWidget {
                   onPressed: () {
                     // Navigator.push(context,
                     //     MaterialPageRoute(builder: (context) => CartView()));
-                    Get.to(CartView());
+                    // Get.to(CartView());
                     // Get.off(CartView());
+                    Get.snackbar("title", "message",);
+                    Get.defaultDialog(title: "message",);
                   },
                   child: Text("Navigate to Cart"))
             ],
